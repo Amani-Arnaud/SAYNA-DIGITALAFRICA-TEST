@@ -1,0 +1,524 @@
+
+/* importation de la police */
+@font-face {
+    font-family: 'Typo-FarFromHomecoming';
+    font-weight: normal;
+    font-style: normal;
+    src: url('Typo-FarFromHomecoming.woff2');
+}
+
+@font-face {
+    font-family: 'Homecoming';
+    font-weight: normal;
+    font-style: normal;
+    src: url('Far-From Homecoming.otf');
+}
+
+ /* Par defaut toutes les balises doivent être coller les unes aux autre */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #B11313;
+}
+
+p{
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+}
+
+/* style de la barre de navigation */
+header {
+    background-color: #B11313;
+    position: relative;
+}
+
+.nav-bar img {
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.nav-bar ul {
+    float: right;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin: 30px;
+}
+
+.nav-bar ul li a { 
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'sans serif';
+}
+/* FIN style de la barre de navigation */
+
+
+/* Style section Home spiderman */
+.main {
+    background: url('../img/img1.png') no-repeat center center;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 870px;
+}
+
+.main .main-content {
+    height: 100%;
+    padding-top: 250px;
+}
+
+.main .main-content h1, h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+.main .main-content h1 {
+    padding-bottom: 50px;
+    font-family: 'Typo-FarFromHomecoming', 'Homecoming';
+    font-size: 5em;
+}
+
+.main .main-content h3 {
+    padding-top: 50px;
+}
+
+.main .main-content a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+.main .main-content .btn-heros {
+    background-color: white;
+    margin-right: 20px;
+    color: #B11313;
+
+}
+/* FIN section Home spiderman */
+
+
+/* style section profils spidermen */
+.main-profils{
+    background-color: #B11313;
+}
+
+.main-profils .title {
+    margin-bottom: 10px;
+}
+
+.main-profils .title h1 {
+    font-family: 'Typo-FarFromHomecoming', 'Homecoming';
+    font-size: 150%;
+    color: white;
+}
+
+.main-profils .title p {
+    color: white;
+    text-justify: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.main-profils .content .profil {
+    display: inline-block;
+    width: 28%;
+    color: white;
+    text-align: center;
+    height: 700px;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-right: 5%;
+}
+
+.main-profils .content .profil+.profil+.profil {
+    /* margin-right: 20px; */
+}
+
+.main-profils .content .profil img {
+    width: 100%;
+}
+
+.main-profils .content .profil p {
+    padding: 40px 0px 40px 0px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.btn-adversaire {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    color: #B11313;
+    font-family: sans-serif;
+}
+
+/* FIN section profils spidermen */
+
+
+/* style section inscription */
+.container {
+    background: url('../img/img5.png') no-repeat left center;
+    background-size: 554px;
+    background-color: #114C92;
+    height: 554px;
+}
+
+.container .row .column {
+    float: right;
+    width: 600px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.title-container h1{
+    font-family: 'Typo-FarFromHomecoming', 'Homecoming';
+    font-size: 150%;
+    color: #FFFFFF;
+}
+
+.title-container p{
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.form-inscription input {
+    /* display: block; */
+    width: 400px;
+    margin: 10px;
+    /* height: 20px; */
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.form-inscription input::placeholder {
+    color: #000000;
+    padding-left: 15px;
+}
+
+.form-inscription .btn-inscription {
+    background-color: transparent;
+    width: 180px;
+    margin: 25px;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 15px;
+    color: white;
+}
+
+/* FIN section inscription */
+
+/* style section newsletter */
+.newsletter {
+    background: url('../img/img6.png') no-repeat;
+    background-size: 900px;
+    background-position: 120% 100%;
+    background-color: #B11313;
+    height: 700px;
+}
+
+.main-news {
+    padding-top: 80px;
+}
+
+.title-news h1 {
+    font-family: 'Typo-FarFromHomecoming', 'Homecoming';
+    font-size: 150%;
+    color: #FFFFFF;
+}
+
+.title-news p {
+    font-family: sans-serif;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.form-news input[type=text], .form-news input[type=email] {
+    width: 300px;
+    margin: 5px 0px ;
+    border: solid 1px #FFFFFF;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.form-news input::placeholder {
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+
+.form-news span{
+    display: inline-block;
+    color: #FFFFFF;
+    width: 300px;
+    padding: 15px;
+    text-align: justify;
+    vertical-align: middle;
+
+}
+
+.btn-new {
+    background-color: #FFFFFF;
+    width: 180px;
+    margin: 25px;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 15px;
+    color: #000000;
+}
+
+/* Fin section newsletter */
+
+/* style Footer */
+
+footer {
+    background-color: #000000;
+}
+
+.bottom-menu {
+    padding-top: 60px;
+}
+
+.bottom-menu ul {
+    float: left;
+    vertical-align: middle;
+    padding-bottom: 80px;
+}
+
+.bottom-menu ul li img{
+    vertical-align: middle;
+}
+
+.bottom-menu ul li {
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+
+.bottom-menu select {
+    /* -webkit-appearance: none; */
+    float: right;
+    padding: 10px;
+    width: 180px;
+    border-radius: 20px;
+    background-color: #B11313;
+    color: #FFFFFF;
+}
+
+.socials-link {
+    text-align: center;
+    clear: both;
+    padding-top: 20px;
+}
+
+.socials-link a{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    background-color: #B11313;
+    border-radius: 50%;
+}
+.socials-link a img {
+    vertical-align: middle;
+}
+
+.copyright p{
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+/* FIN footer */
+
+
+
+/* ################################ */
+
+/* STYLE RESPONSIVE */
+
+@media all and (max-width: 1024px)
+{
+    par default en responsive les div sont centrée
+    .center{
+        margin: auto;
+        width: 90%;
+    }
+
+    /* style de la barre de navigation */
+    .nav-bar {
+        position: absolute;
+        padding-top: 15px;
+        padding-left: 5%;
+        width: 90%;
+    }
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    .nav-bar img {
+        vertical-align: middle;
+        margin: 5px;
+        margin-top: 0px;
+    }
+
+    .nav-bar img+img+img{
+        width: 35%;
+    }
+
+    /* FIN style de la barre de navigation */
+
+
+    /* Style section Home spiderman */
+    .main {
+        background: url('../img/img1.png') no-repeat;
+        background-size: 100%;
+        /* background-position: 100% 100%; */
+    }
+
+    .main {
+        height: 250px;
+    }
+    .main .main-content {
+        /* height: 0px; */
+        padding-top: 60px;
+    }
+    .main .main-content h1 {
+        /* width: 800px; */
+        font-family: 'Typo-FarFromHomecoming', 'Homecoming';
+        font-size: 180%;
+        margin: 5px;
+        padding: 0px;
+    }
+
+    .main .main-content h3 {
+        font-size: 100%;
+        /* padding-top: 0px;
+        margin-top: 5px; */
+    }
+
+    .main .main-content a {
+        float: left;
+        text-decoration: none;
+        color: white;
+        border: solid 1px white;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .main .main-content .btn-heros {
+        background-color: white;
+        margin-right: 20px;
+        color: #B11313;
+
+    }
+
+    /* FIN section Home spiderman */
+
+
+    /* style section profils spidermen */
+
+
+    .main-profils {
+        text-align: center;
+    }
+
+    .main-profils .content .profil {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+
+    .main-profils .content .profil img {
+        width: 80%;
+    }
+
+    .main-profils .content .profil p {
+        padding: 20px 0px 40px 0px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    /* FIN section profils spidermen */
+
+
+    /* style section inscription */
+    .container .row .column {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-inscription input {
+        width: 90%;
+    }
+
+    .form-inscription .btn-inscription {
+        border-radius: 25px;
+    }
+
+    /* FIN section inscription */
+
+    /* style section newsletter */
+    .newsletter {
+        background-position: -10% 100%;
+        background-size: 650px;
+        /* text-align: center; */
+    }
+
+    .title-news {
+        text-align: center;
+    }
+
+    .btn-new {
+        border-radius: 25px;
+    }
+
+    /* Fin section newsletter */
+
+    /* style Footer */
+
+    .bottom-menu {
+        position: relative;
+    }
+
+    .bottom-menu .img-logo{
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 15%;
+
+    }
+
+    .bottom-menu ul {
+        width: 70%;
+    }
+
+    .bottom-menu ul li {
+        display: block;
+    }
+
+    .bottom-menu select {
+        float: right;
+        padding: 10px;
+        width: 30%;
+        vertical-align: top;
+    }
+
+}
